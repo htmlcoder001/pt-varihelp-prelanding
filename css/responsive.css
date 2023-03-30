@@ -1,0 +1,91 @@
+/*! Responsive styles. (common.css) | @author webtitov.ru */
+
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  .content-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+  }
+  .footer-wrapper__item {
+    max-width: 100%;
+  }
+  .footer-wrapper__item:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .comments-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .content-heading__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .content-heading__description {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .content-heading__author,
+  .content-heading__date {
+    margin-top: 16px;
+  }
+  .content-wrapper__post figure {
+    width: calc(100% + 24px);
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+    transform: translateX(-12px);
+  }
+}
+
+@media (max-width: 475px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer-wrapper__item:last-child {
+    grid-column: auto;
+  }
+  .content-heading__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .content-heading__description {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .content-heading__author,
+  .content-heading__date,
+  .footer-item__link,
+  .footer-item__copyright {
+    font-size: 12px;
+  }
+  .content-wrapper__post p {
+    margin-bottom: 16px;
+  }
+  .content-wrapper__post h2,
+  .footer-item__heading {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .comments-wrapper__description {
+    margin: 16px auto;
+  }
+  .footer-item__text {
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,318 @@
+/*! Main styles. (common.css) | @author webtitov.ru */
+
+.theme-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  border-top: 23px solid #B0150B;
+  background-color: #C4170C;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-wrapper__logo {
+
+}
+.header-logo__image {
+
+}
+
+/* Post content */
+.content-wrapper {
+  max-width: 960px;
+  padding-top: 48px;
+}
+.content-wrapper__heading {
+
+}
+.content-heading__title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 46px;
+  font-family: 'Open Sans', sans-serif;
+}
+.content-heading__title span {
+  color: #ff0000;
+}
+.content-heading__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  color: #121212;
+  margin-top: 32px;
+}
+.content-heading__author {
+  font-weight: 700;
+  color: #777777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  display: block;
+  margin-top: 24px;
+}
+.content-heading__date {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: block;
+  color: #777777;
+  margin-top: 24px;
+}
+.content-wrapper__post {
+  padding-top: 48px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.content-wrapper__post figure {
+  margin: 0 auto 24px auto;
+  display: block;
+  text-align: center;
+}
+.content-wrapper__post figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: block;
+  color: #777777;
+  margin-top: 4px;
+}
+.content-wrapper__post p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  display: block;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.content-wrapper__post h2 {
+  font-family: Open Sans,sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: #282828;
+  margin-bottom: 24px;
+}
+.content-wrapper__post ol {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+.content-wrapper__post ol li {
+  list-style: decimal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  padding: 4px 0;
+}
+.content-wrapper__post a {
+  color: #C41C1C;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.content-wrapper__post a:hover {
+  text-decoration: none;
+}
+.content-post__bottom {
+  position: relative;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+.content-bottom__text {
+  font-family: 'Open Sans', sans-serif;
+  color: #5A5A5A;
+  font-size: 11px;
+  line-height: 1.3em;
+  background-color: #ffffff;
+  padding: 0 8px;
+  position: relative;
+  z-index: 1;
+}
+.content-post__bottom:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: calc(100% - 48px);
+  left: 50%;
+  top: calc(50% + 2px);
+  background-color: #e1e1e1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Comments */
+.comments {
+  background-color: #EBEBEB;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.comments-wrapper {
+  max-width: 680px;
+}
+.comments-wrapper__title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: #282828;
+}
+.comments-wrapper__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #777777;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.comments-wrapper__box {
+
+}
+.comments-box__item {
+  padding: 16px 0;
+}
+.comments-item__head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.comments-head__name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+}
+.comments-head__time {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #777777;
+}
+.comments-item__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.comments-item__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.comments-actions__item {
+  position: relative;
+  padding-left: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+}
+.comments-actions__item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+}
+.--item-is-reply {
+  border-left: 5px solid #DDDDDD;
+  margin-right: 12px;
+  padding-left: 12px;
+}
+.--action-like:before {
+  background-image: url(../img/icons/icon-like.png);
+}
+.--action-reply:before {
+  background-image: url(../img/icons/icon-reply.png);
+}
+.comments-box__bottom {
+  background-color: #D5D5D5;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+  text-align: center;
+  margin-top: 24px;
+}
+.comments-bottom__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #777777;
+  line-height: 24px;
+}
+
+/* Footer */
+footer {
+  background-color: #343434;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.footer-wrapper__item {
+  max-width: 33%;
+}
+.footer-item__logo {
+  margin-left: -45px;
+}
+.footer-logo__img {
+  width: 200px;
+  height: 50px;
+}
+.footer-item__copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 16px;
+  padding: 2px 0;
+}
+.footer-item__heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.footer-item__list {
+  padding-left: 18px;
+  margin-top: 16px;
+}
+.footer-list__item {
+  list-style: circle;
+  color: #e1e1e1;
+  padding: 2px 0;
+}
+.footer-item__link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer-item__link:hover {
+  color: #C41C1C;
+  text-decoration: underline;
+}
+.footer-item__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: #777777;
+}
