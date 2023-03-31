@@ -87,14 +87,14 @@
         </p>
         <p>De acordo com os resultados dos ensaios clínicos realizados pelo Centro de Saúde Privado com o Centro de Flebologia, o produto ajudou completamente 84% dos pacientes com varizes. Os restantes 16% fizeram progressos significativos.</p>
         <h2>Como posso comprar Varihelp?</h2>
-        <p>O nosso relatório contactou o fabricante oficial de Varihelp, que nos informou que em Portugal as últimas unidades são vendidas exclusivamente através do <a href="#">formulário de encomenda oficial</a> do representante da marca em Portugal, só assim terá a certeza de receber o <b>produto original</b> e uma entrega rápida.</p>
+        <p>O nosso relatório contactou o fabricante oficial de Varihelp, que nos informou que em Portugal as últimas unidades são vendidas exclusivamente através do <a href="#form">formulário de encomenda oficial</a> do representante da marca em Portugal, só assim terá a certeza de receber o <b>produto original</b> e uma entrega rápida.</p>
         <p>Também nos informaram que o creme não é vendido em lojas físicas e que, devido ao sucesso das vendas, existem algumas falsificações no mercado.</p>
         <p>Como agradecimento pela publicação deste artigo, o fabricante concedeu um <b>desconto exclusivo de 50%</b> aos nossos leitores.</p>
-        <p><b>*</b> A oferta só está disponível <b>HOJE, <span class="js-date"></span></b>, devido à elevada procura. Para obter a <a href="#">Varihelp</a> com desconto, introduza o seu nome e número de contacto nos campos abaixo e clique em "Encomendar".</p>
+        <p><b>*</b> A oferta só está disponível <b>HOJE, <span class="js-date"></span></b>, devido à elevada procura. Para obter a <a href="#form">Varihelp</a> com desconto, introduza o seu nome e número de contacto nos campos abaixo e clique em "Encomendar".</p>
         <figure>
           <img src="img/prod.png" alt=""/>
         </figure>
-        <p><b>*</b> Só comprando através do <a href="#">formulário de encomenda oficial</a> terá a certeza de receber o <b>produto original</b>.</p>
+        <p><b>*</b> Só comprando através do <a href="#form">formulário de encomenda oficial</a> terá a certeza de receber o <b>produto original</b>.</p>
         <h2>Experimente uma nova fase na sua vida</h2>
         <p class="content-post__bottom">
           <span class="content-bottom__text">CONTINUAÇÃO APÓS A PUBLICIDADE</span>
@@ -106,6 +106,57 @@
       </div>
     </div>
   </section>
+  
+  <!--Form-->
+  
+  <link rel="stylesheet" href="form/form.css">
+  
+  <div id="form">
+    
+    <div id="form_image">
+      <div class="form_image_wrap_image">
+        <img src="img/prod.png" alt="" style="max-width: 140px; ">
+      </div>
+    </div>
+    
+    
+    <div class="form_wrap" id="objectScrollAttention">
+      <form method="POST" geo="pt" action="api.php"
+            onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+        <label class="descount">Desconto -50%</label>
+        
+        <div id="price">
+          <div class="price_new">
+            39 €
+          </div>
+          <div class="price_old">
+            78 €
+          </div>
+        </div>
+        
+        <center><label class="inp_name">Nome</label></center>
+        <input name="name" placeholder="" required="" type="text">
+        
+        <center><label class="inp_phone">Telefone (telemóvel activo)
+        </label></center>
+        <input name="phone" placeholder="" required="" type="tel" id="phone">
+        
+        <input name="subid" type="hidden" value="{subid}">
+        <input name="px" type="hidden" value="{px}">
+        <input name="bayer" type="hidden" value="{bayer}">
+        <br>
+        <button type="submit" class="btnn">ENCOMENDAR</button>
+        
+        <div class="sus"> 
+          <div class="sus_text">Os seus dados são confidenciais</div>
+        </div>
+      
+      </form>
+    </div>
+  
+  </div>
+  <br>
+  <!--Form END-->
   
   <!-- COMMENTS -->
   <section class="comments">
@@ -266,7 +317,7 @@
 <footer>
   <div class="theme-wrapper footer-wrapper">
     <div class="footer-wrapper__item">
-      <a href="#" class="footer-item__logo">
+      <a href="#form" class="footer-item__logo">
         <img src="img/logotype.png" alt="" class="footer-logo__img"/>
       </a>
       <p class="footer-item__copyright">&copy; Copyright 2000-<script>document.write(new Date().getFullYear());</script> Notícias de Portugal Comunicação e Participações</p>
@@ -275,13 +326,13 @@
       <span class="footer-item__heading">Links Úteis</span>
       <ul class="footer-item__list">
         <li class="footer-list__item">
-          <a href="#" class="footer-item__link">Termos de Uso</a>
+          <a href="#form" class="footer-item__link">Termos de Uso</a>
         </li>
         <li class="footer-list__item">
-          <a href="#" class="footer-item__link">Políticas de Privacidade</a>
+          <a href="#form" class="footer-item__link">Políticas de Privacidade</a>
         </li>
         <li class="footer-list__item">
-          <a href="#" class="footer-item__link">Contato</a>
+          <a href="#form" class="footer-item__link">Contato</a>
         </li>
       </ul>
     </div>

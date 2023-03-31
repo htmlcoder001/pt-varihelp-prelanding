@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     WebT.elements.scroll_links.forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        closeModals();
         const offset = -30,
               element = document.querySelector(this.getAttribute('href')),
               target = element.getBoundingClientRect().top + window.pageYOffset + offset;
